@@ -77,7 +77,10 @@
               "name": "Rénovation de salle de bain | Devis gratuit | Rittinger",
               "description": "Experts en rénovation de salle de bain haut de gamme : douche italienne, carrelage design et meubles sur mesure. Demandez votre devis gratuit.",
               "url": "https://devis-sdb.rittinger.fr/",
-              "inLanguage": "fr-FR"
+              "inLanguage": "fr-FR",
+              "mainEntity": {
+                "@id": "#rittinger"
+              }
             },
             {
               "@type": "BreadcrumbList",
@@ -98,6 +101,7 @@
             },
             {
               "@type": "LocalBusiness",
+              "@id": "#rittinger",
               "name": "Rittinger",
               "image": "https://devis-sdb.rittinger.fr/assets/brand/rittinger-logo.png",
               "telephone": "+33 3 87 60 69 56",
@@ -108,18 +112,23 @@
                 "postalCode": "57140",
                 "addressCountry": "FR"
               },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "ratingCount": "20",
+                "bestRating": "5"
+              },
               "url": "https://rittinger.fr/",
               "sameAs": [
                 "https://facebook.com/profile.php?id=61553957894849",
-                "https://instagram.com//sarl_rittinger/"
+                "https://instagram.com/sarl_rittinger/"
               ]
             },
             {
               "@type": "Service",
               "serviceType": "Rénovation de salle de bain",
               "provider": {
-                "@type": "LocalBusiness",
-                "name": "Rittinger"
+                "@id": "#rittinger"
               }
             },
             {
@@ -128,8 +137,8 @@
                 "@type": "EntryPoint",
                 "urlTemplate": "https://devis-sdb.rittinger.fr/",
                 "actionPlatform": [
-                  "http://schema.org/DesktopWebPlatform",
-                  "http://schema.org/MobileWebPlatform"
+                  "https://schema.org/DesktopWebPlatform",
+                  "https://schema.org/MobileWebPlatform"
                 ]
               }
             }
@@ -249,6 +258,12 @@
                                 <meta itemprop="name" content="Rittinger" />
                                 <meta itemprop="url" content="https://devis-sdb.rittinger.fr/" />
                             </div>
+                                <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                  <meta itemprop="streetAddress" content="3 rue de l'Étang" />
+                                  <meta itemprop="addressLocality" content="Plesnois" />
+                                  <meta itemprop="postalCode" content="57140" />
+                                  <meta itemprop="addressCountry" content="FR" />
+                                </div>
                             <p class="reviews__rate flex items-center content-between">
                                 <span itemprop="ratingValue">5.0</span>
                                 <span class="reviews__stars" aria-hidden="true">★ ★ ★ ★ ★</span>
