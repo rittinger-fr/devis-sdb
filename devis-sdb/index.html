@@ -211,7 +211,7 @@
                     <!-- Hero Tagline -->
                     <p class="hero-section__tagline">Votre salle de bain, conçue et installée par des experts. Un service clé en main, un design unique et une qualité certifiée pour un espace qui vous ressemble.</p>
                     <!-- Reviews block -->
-                    <div class="reviews" itemscope itemtype="http://schema.org/AggregateRating" role="region" aria-labelledby="reviews-google-title">
+                    <div class="reviews" itemscope itemtype="https://schema.org/AggregateRating" role="region" aria-labelledby="reviews-google-title">
                         <h2 class="sr-only" id="reviews-google-title">Avis Google</h2>
                         <picture>
                             <source 
@@ -231,12 +231,15 @@
                         </picture>
                         <div class="reviews__content">
                             <a class="reviews__title stretched-link" href="https://maps.app.goo.gl/18aGfHpaMjrX7iPL6" target="_blank" rel="noopener noreferrer" aria-label="Voir les avis Google de Rittinger (ouvre dans un nouvel onglet)">Google Reviews</a>
+                            <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/WebPage">
+                                <meta itemprop="@id" content="https://devis-sdb.rittinger.fr/" />
+                            </div>
                             <p class="reviews__rate flex items-center content-between">
                                 <span itemprop="ratingValue">5.0</span>
                                 <span class="reviews__stars" aria-hidden="true">★ ★ ★ ★ ★</span>
                                 <span class="sr-only">sur 5 étoiles</span>
                             </p>
-                            <p class="sr-only" itemprop="ratingCount">20 avis</p>
+                            <meta itemprop="ratingCount" content="20" />
                         </div>
                     </div>
                 </div>
