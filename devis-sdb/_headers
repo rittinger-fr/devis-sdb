@@ -2,4 +2,14 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://www.google-analytics.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests; require-trusted-types-for 'script'
+  Content-Security-Policy: 
+    default-src 'self'; 
+    script-src 'self' https://www.google-analytics.com https://connect.facebook.net 'sha256-xmR74ZM1d2XGVVnJlVAtCrH9VxDsR6Y/bn8vyKk6zuA='; 
+    style-src 'self' 'unsafe-inline'; 
+    img-src 'self' https://www.facebook.com data: https:; 
+    font-src 'self'; 
+    connect-src 'self' https://www.google-analytics.com https://connect.facebook.net https://www.facebook.com; 
+    base-uri 'self'; 
+    form-action 'self'; 
+    object-src 'none'; 
+    upgrade-insecure-requests;
