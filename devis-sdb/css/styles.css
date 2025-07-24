@@ -859,8 +859,9 @@ h1.hero-section__heading {
 /*  Hero Tagline */
 p.hero-section__tagline {
     margin-bottom: var(--tpl-sp-300);
-    font-size: var(--tpl-fs-lead);
+    font-size: var(--tpl-fs-h4);
     text-shadow: var(--tpl-shadow-lg);
+    font-weight: 500;
 }
 
 /*  Hero Goole Reviews */
